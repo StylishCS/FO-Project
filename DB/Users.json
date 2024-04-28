@@ -5,12 +5,5 @@
     "password": "$2b$10$TdDzL9ZnHYDjgCy9puwrhOElrtJbYy0nn8aIXWjTeqPHJXLQzp9Ne",
     "id": "Tu2RB07vKr",
     "image": "http://127.0.0.1:3000/1714274174147.jpg"
-  },
-  {
-    "name": "Ali",
-    "email": "Ali@gmail.com",
-    "password": "$2b$10$HiqfHJIG/yMwgFl6kUOVuuitTsVC/rZHL26gsTl6nRFgQgFm48yX2",
-    "id": "yVmAqoGDk8",
-    "image": "http://127.0.0.1:3000/1714274204585.jpg"
   }
 ]

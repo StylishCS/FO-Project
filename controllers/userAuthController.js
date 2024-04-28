@@ -4,16 +4,7 @@ const jwt = require("jsonwebtoken");
 const path = require("path");
 const usersFilePath = path.resolve(__dirname, "..", "DB", "Users.json");
 const Users = require("../DB/Users.json");
-
-function generateUID(length) {
-  const characters =
-    "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-  let result = "";
-  for (let i = 0; i < length; i++) {
-    result += characters.charAt(Math.floor(Math.random() * characters.length));
-  }
-  return result;
-}
+const { generateUID } = require("../utils/UUID");
 
 async function signupUserController(req, res) {
   try {
@@ -36,7 +27,7 @@ async function signupUserController(req, res) {
     Users.push(user);
     fs.writeFileSync(usersFilePath, JSON.stringify(Users, null, 2));
     const token = jwt.sign({ id: user.id }, process.env.JWT_SECRET, {});
-    return res.render("index", { user: user, token: token });
+    return res.status(200).json({ user: user, token: token });
   } catch (error) {
     return res.status(500).json("INTERNAL SERVER ERROR");
   }
@@ -53,7 +44,7 @@ async function loginUserController(req, res) {
       return res.status(401).json("Wrong Email or Password");
     }
     const token = jwt.sign({ id: user.id }, process.env.JWT_SECRET, {});
-    return res.render("index", { user: user, token: token });
+    return res.status(200).json({ user: user, token: token });
   } catch (error) {
     console.log(error);
     return res.status(500).json("INTERNAL SERVER ERROR");
