@@ -1,1 +1,11 @@
-[]
+[
+  {
+    "name": "Asus TUF Dash F15",
+    "price": "60000",
+    "netPrice": "50000",
+    "description": "Laptops",
+    "Stock": "5",
+    "id": "61vJC9aAds",
+    "image": "http://127.0.0.1:3000/1714329757636.png"
+  }
+]

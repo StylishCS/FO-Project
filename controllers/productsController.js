@@ -78,4 +78,5 @@ module.exports = {
   addProductController,
   updateProductController,
   deleteProductController,
+  getProductByIDController,
 };
