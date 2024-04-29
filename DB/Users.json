@@ -4,6 +4,41 @@
     "email": "joeshirf@gmail.com",
     "password": "$2b$10$TdDzL9ZnHYDjgCy9puwrhOElrtJbYy0nn8aIXWjTeqPHJXLQzp9Ne",
     "id": "Tu2RB07vKr",
-    "image": "http://127.0.0.1:3000/1714274174147.jpg"
+    "image": "http://127.0.0.1:3000/1714274174147.jpg",
+    "cart": [],
+    "orders": [
+      {
+        "id": "1nxfrQqOd3",
+        "order_id": 205209180,
+        "total_price": 246,
+        "user_id": "Tu2RB07vKr",
+        "paid": true,
+        "cart_items": [
+          "5TVcEUw7WZ"
+        ],
+        "shipped": true
+      }
+    ]
+  },
+  {
+    "name": "Yusuf",
+    "email": "Yusuf@gmail.com",
+    "password": "$2b$10$vji3agNaAlsqolz.tXoWuul2zZOzjCCmE06j3LBBLXhSpl3UdDCL6",
+    "id": "xRwnCbaXKM",
+    "cart": [],
+    "orders": [
+      {
+        "id": "Tdok0ILSOc",
+        "order_id": 205212158,
+        "total_price": 123,
+        "user_id": "xRwnCbaXKM",
+        "paid": true,
+        "cart_items": [
+          "5TVcEUw7WZ"
+        ],
+        "shipped": false
+      }
+    ],
+    "image": "http://127.0.0.1:3000/1714399475498.jpg"
   }
 ]

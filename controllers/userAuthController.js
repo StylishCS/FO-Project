@@ -21,6 +21,8 @@ async function signupUserController(req, res) {
 
     user.id = userId;
     user.password = bcrypt.hashSync(user.password, 10);
+    user.cart = [];
+    user.orders = [];
     if (req.file) {
       user.image = `http://127.0.0.1:3000/${req.file.filename}`;
     }

@@ -60,6 +60,7 @@ async function deleteProductController(req, res) {
 
 async function addProductController(req, res) {
   try {
+    console.log(req.body);
     const product = req.body;
     const productId = generateUID(10);
     product.id = productId;
